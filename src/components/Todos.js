@@ -1,33 +1,12 @@
 import React, { Component } from 'react'
+import TodoItem from './TodoItem'
 
 class Todos extends Component {
-
-    state = {
-        Todos: [
-          {
-            id: 1,
-            title: 'take out the trash',
-            completed: false
-          },
-          {
-            id: 1,
-            title: 'take out the trash',
-            completed: false
-          },
-          {
-            id: 1,
-            title: 'take out the trash',
-            completed: false
-          },
-        ]
-      }
-
   render () {
-    return (
-      <div>
-        <h1>Todos.js</h1>
-      </div>
-    )
+      console.log(this.props.todos)
+    return this.props.todos.map((todo) => (
+    <TodoItem todo={todo} />
+    ))
   }
 }
 
