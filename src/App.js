@@ -3,6 +3,7 @@ import Todos from './components/Todos'
 
 import './App.css';
 
+// States
 class App extends Component {
   state = {
     todos: [
@@ -14,17 +15,17 @@ class App extends Component {
       {
         id: 2,
         title: 'Wash dishes',
-        completed: false
+        completed: true
       },
       {
         id: 3,
-        title: 'fold laundry',
+        title: 'Fold laundry',
         completed: false
       }
     ]
   }
 
-  
+  // Component which calls to Todos component
   render() {
     console.log(this.state.todos)
     return (
