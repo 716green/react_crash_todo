@@ -14,21 +14,21 @@ uuidv4();
 class App extends Component {
   state = {
     todos: [
-      {
-        id: uuidv4(),
-        title: 'Take out the trash',
-        completed: false
-      },
-      {
-        id: uuidv4(),
-        title: 'Wash dishes',
-        completed: true
-      },
-      {
-        id: uuidv4(),
-        title: 'Fold laundry',
-        completed: false
-      }
+      // {
+      //   id: uuidv4(),
+      //   title: 'Take out the trash',
+      //   completed: false
+      // },
+      // {
+      //   id: uuidv4(),
+      //   title: 'Wash dishes',
+      //   completed: false
+      // },
+      // {
+      //   id: uuidv4(),
+      //   title: 'Fold laundry',
+      //   completed: false
+      // }
     ]
   }
 
